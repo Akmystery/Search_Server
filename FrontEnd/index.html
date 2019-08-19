@@ -1,0 +1,289 @@
+<?php
+  header('Access-Control-Allow-Origin: *'); ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="ISO-8859-1">
+
+<!-- Mobile Specific Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Favicon-->
+<link rel="shortcut icon" href="img/fav.png">
+<!-- Author Meta -->
+<meta name="author" content="codepixer">
+<!-- Meta Description -->
+<meta name="description" content="">
+<!-- Meta Keyword -->
+<meta name="keywords" content="">
+<!-- meta character set -->
+<meta charset="UTF-8">
+<!-- Site Title -->
+<title>Amazon Information Retrieval</title>
+
+<!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/boostrap/3.3.6/css/bootstrap.min.css" rel="stylesheet>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"></link>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<style>
+	.selcls { 
+		border: solid 1px #517B97; 
+		outline: 0; 
+		background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #CAD9E3), to(#FFFFFF)); 
+		background: -moz-linear-gradient(top, #FFFFFF, #CAD9E3 1px, #FFFFFF 25px); 
+		box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+		-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+		-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+
+	}    
+	.prodImg {
+		padding-top: 0px;
+		padding-right: 20px;
+		padding-bottom: 50px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		float:left;
+		clear:left;
+	}
+	
+	.ui-corner-all {
+		-moz-border-radius: 0;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+	}
+	.ui-menu {
+		border: 1px solid black;
+		font-family: "Roboto", sans-serif;
+		font-size: 15px;
+	}
+	.ui-menu .ui-menu-item a {
+		color: #888;
+	}
+	.ui-menu .ui-menu-item:hover {
+		display: block;
+		text-decoration: none;
+		color: #3D3D3D;
+		cursor: pointer;
+		background-color: lightgray;
+		background-image: none;
+		border: 1px solid lightgray;
+	}
+	.ui-widget-content .ui-state-hover, .ui-widget-content .ui-state-focus {
+		border: 1px solid yellow;
+		background-image: none;
+		background-color: yellow;
+		font-weight: bold;
+		color: #3D3D3D;
+	}
+	
+</style>    
+
+<!--
+		Google Font
+		============================================= -->
+<!--link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet"-->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+
+<!--
+		CSS
+		============================================= -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+<link rel="stylesheet" href="css/linearicons.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/nice-select.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/owl.carousel.css">
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	<!-- Start Header Area -->
+	<header id="header">
+		<div class="container">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html">
+						<!--img src="img/fav.png" alt="" title="" margin-left="1750px"/--> 
+						<h2>Group 26</h2>
+					</a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li class="menu-active">
+					</ul>
+				</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+
+
+	<!-- Start Banner Area -->
+	<section class="home-banner-area relative" >
+		<div class="container">
+		<!--div class="row fullscreen d-flex align-items-center justify-content-center"-->
+			<div class="row fullscreen d-flex align-items-center justify-content-center">
+				<div class="banner-content col-lg-8 col-md-12">
+					<h1 class="wow fadeIn" data-wow-duration="4s">Amazon <br>Information Retrieval</h1><br>
+
+					<div class="input-wrap">
+						<form id="searchForm" name="searchForm" method="GET" class="form-box d-flex justify-content-between">
+							<select class="dropdown" id ="searchDropDown" >
+							  <option value="categoryll">All</option>
+							  <option value="categoryToys">Toys</option>
+							  <option value="categoryUnlockedCellPhones">Unlocked Cell Phones</option>
+							  <option value="categoryCarrierCellPhone">Carrier Cell Phone</option>
+							  <option value="categoryBeauty">Beauty</option>
+							  <option value="categorySoftware">Software</option>
+							  <option value="categoryVideo">Video</option>
+							  <option value="categoryKindle">Kindle</option>
+							  <option value="categoryGames">Games</option>
+							  <option value="categoryComputers">Computers</option>
+							  <option value="categorSport">Sport</option>
+							</select>
+							<input type="text" placeholder="Search for a product" class="form-control" id="productNameTB">
+							<input type="submit" id="submitFormBtn" class="btn search-btn" value="Search" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Banner Area -->
+
+	<!--Start Feature Area -->
+	<section class="feature-area" id="feature-area" style="display:none;">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div>
+					<div class="section-title text-center">
+						<h1 id="searchResultTitle"></h1>
+						<!--div style="float:left;">
+							<div style="display:flex;">
+								<p id="resultsMsg1"></p>
+								&nbsp;
+								<p id="searchStartCount"></p>
+								&nbsp;
+								<p id="resultsMsg2"></p>
+								&nbsp;
+								<p id="searchEndCount"></p>
+								&nbsp;
+								<p id="searchString"></p>
+							</div>
+						</div>
+						
+						<div style="float:right; display:flex;">
+							<h5>Sort By:</h5>
+							<select class="form-control selcls" id="sortBy" style="display:none;">
+							  <option value="">Default</option>
+							  <option value="price asc">Price: Low to High</option>
+							  <option value="price desc">Price: High to Low</option>
+							  <option value="ratings.5_star desc">Rating</option>
+							</select>
+						</div-->
+					</div>
+				</div>
+			</div>
+			
+			<div class="row" style="padding-bottom:1%;">
+				<div class="col-sm-9">
+					<div style="float:left; clear:left;">
+						<div style="display:flex;">
+							<p id="resultsMsg1"></p>
+							&nbsp;
+							<p id="searchStartCount"></p>
+							&nbsp;
+							<p id="resultsMsg2"></p>
+							&nbsp;
+							<p id="searchEndCount"></p>
+							&nbsp;
+							<p id="searchString"></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3" style="float:right; display:flex;">
+					<p> Sort By: </p>
+					<div>
+						<select class="form-control selcls" id="sortBy" style="display:none; margin-left:5px; margin-top:-5px;">
+						  <option value="">Default</option>
+						  <option value="price asc">Price: Low to High</option>
+						  <option value="price desc">Price: High to Low</option>
+						  <option value="ratings.5_star desc">Rating</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<div id="reviewDiv"></div>
+				<div id="allReviewDiv"></div>
+				<button class="btn btn-info" type="button" id="prevBtn" style="display:none; float:left;">Previous</button>
+				<button class="btn btn-info" type="button" id="nextBtn" style="display:none; float:right;">Next</button>
+			</div>
+	</section>
+	<!-- End Feature Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<!--div id="back-top">
+		<a title="Go to Top" href="#"></a>
+	</div-->
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<!--script src="js/vendor/jquery-2.2.4.min.js"></script-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl-carousel-thumb.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/data.js"></script>
+	<script>
+		$(function() {
+			var URL_PREFIX = "http://localhost:8983/solr/4034_IR/select?q=name:";
+			var URL_SUFFIX = "&wt=json";
+			$("#productNameTB").autocomplete({
+				source : function(request, response) {
+					var URL = URL_PREFIX + $("#productNameTB").val() + URL_SUFFIX;
+					$.ajax({
+						url : URL,
+						success : function(data) {
+							var docs = JSON.stringify(data.response.docs);
+							var jsonData = JSON.parse(docs);
+							response($.map(jsonData, function(value, key) {
+								return {
+									label : value.name
+								}
+							}));
+						},
+						dataType : 'jsonp',
+						jsonp : 'json.wrf'
+					});
+				},
+				minLength : 1
+			})
+		});
+	</script>
+	
+</body>
+</html>

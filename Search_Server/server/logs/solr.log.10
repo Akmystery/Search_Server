@@ -1,0 +1,604 @@
+2019-04-09 03:26:53.094 INFO  (main) [   ] o.e.j.u.log Logging initialized @817ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-04-09 03:26:53.249 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-04-09 03:26:53.264 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_131-b11
+2019-04-09 03:26:53.292 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/contexts/] at interval 0
+2019-04-09 03:26:53.552 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-04-09 03:26:53.565 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-04-09 03:26:53.565 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-04-09 03:26:53.567 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-04-09 03:26:53.628 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-04-09 03:26:53.672 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-04-09 03:26:53.679 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.0
+2019-04-09 03:26:53.679 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-04-09 03:26:53.679 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server
+2019-04-09 03:26:53.680 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-04-09T03:26:53.680Z
+2019-04-09 03:26:53.718 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/solr
+2019-04-09 03:26:53.726 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/solr/solr.xml
+2019-04-09 03:26:53.819 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99, but no JMX reporters were configured - adding default JMX reporter.
+2019-04-09 03:26:54.847 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-04-09 03:26:55.250 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-04-09 03:26:55.252 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-04-09 03:26:55.318 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99
+2019-04-09 03:26:55.318 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99
+2019-04-09 03:26:55.323 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99
+2019-04-09 03:26:55.364 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/solr
+2019-04-09 03:26:55.364 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [4034_IR]
+2019-04-09 03:26:55.410 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.c.SolrResourceLoader [4034_IR] Added 58 libs to classloader, from paths: [/Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/contrib/clustering/lib, /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/contrib/extraction/lib, /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/contrib/langid/lib, /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/contrib/velocity/lib, /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/dist]
+2019-04-09 03:26:55.422 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@63070bab{/solr,file:///Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/solr-webapp/webapp/,AVAILABLE}{/Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/solr-webapp/webapp}
+2019-04-09 03:26:55.442 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@50fe837a{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-04-09 03:26:55.443 INFO  (main) [   ] o.e.j.s.Server Started @3167ms
+2019-04-09 03:26:55.640 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.0
+2019-04-09 03:26:55.766 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.s.IndexSchema [4034_IR] Schema name=default-config
+2019-04-09 03:26:56.165 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-04-09 03:26:56.195 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.c.CoreContainer Creating SolrCore '4034_IR' using configuration from instancedir /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/solr/4034_IR, trusted=true
+2019-04-09 03:26:56.222 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.4034_IR' (registry 'solr.core.4034_IR') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99
+2019-04-09 03:26:56.239 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.c.SolrCore [[4034_IR] ] Opening new SolrCore at [/Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/solr/4034_IR], dataDir=[/Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/solr/4034_IR/data/]
+2019-04-09 03:26:56.275 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-04-09 03:26:56.682 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-04-09 03:26:56.682 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-04-09 03:26:56.693 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-04-09 03:26:56.693 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-04-09 03:26:56.812 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.s.SolrIndexSearcher Opening [Searcher@3f52f634[4034_IR] main]
+2019-04-09 03:26:56.823 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/arkarmin/Desktop/Sem2.2/4034/Group26/Search_Server/server/solr/4034_IR/conf
+2019-04-09 03:26:56.841 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-04-09 03:26:56.846 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-04-09 03:26:56.855 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-04-09 03:26:56.872 INFO  (searcherExecutor-10-thread-1-processing-x:4034_IR) [   x:4034_IR] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3f52f634[4034_IR] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(7.7.0):C10802:[diagnostics={java.runtime.version=1.8.0_131-b11, java.vendor=Oracle Corporation, java.version=1.8.0_131, java.vm.version=25.131-b11, lucene.version=7.7.0, os=Mac OS X, os.arch=x86_64, os.version=10.14.3, source=flush, timestamp=1553184821301}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-09 03:26:56.873 INFO  (searcherExecutor-10-thread-1-processing-x:4034_IR) [   x:4034_IR] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-09 03:26:56.873 INFO  (searcherExecutor-10-thread-1-processing-x:4034_IR) [   x:4034_IR] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-04-09 03:26:56.880 INFO  (searcherExecutor-10-thread-1-processing-x:4034_IR) [   x:4034_IR] o.a.s.c.SolrCore [4034_IR] Registered new searcher Searcher@3f52f634[4034_IR] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(7.7.0):C10802:[diagnostics={java.runtime.version=1.8.0_131-b11, java.vendor=Oracle Corporation, java.version=1.8.0_131, java.vm.version=25.131-b11, lucene.version=7.7.0, os=Mac OS X, os.arch=x86_64, os.version=10.14.3, source=flush, timestamp=1553184821301}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-09 03:29:48.269 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:s&json.wrf=jQuery110209591618514767238_1554780584336&wt=json&_=1554780584337} hits=979 status=0 QTime=51
+2019-04-09 03:30:06.795 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:L&json.wrf=jQuery110209591618514767238_1554780584336&wt=json&_=1554780584338} hits=167 status=0 QTime=2
+2019-04-09 03:30:07.516 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Le&json.wrf=jQuery110209591618514767238_1554780584336&wt=json&_=1554780584339} hits=3 status=0 QTime=0
+2019-04-09 03:30:08.320 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Lef&json.wrf=jQuery110209591618514767238_1554780584336&wt=json&_=1554780584340} hits=0 status=0 QTime=1
+2019-04-09 03:30:08.672 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Left&json.wrf=jQuery110209591618514767238_1554780584336&wt=json&_=1554780584341} hits=10 status=0 QTime=1
+2019-04-09 03:30:11.872 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:L&json.wrf=jQuery110209591618514767238_1554780584336&wt=json&_=1554780584342} hits=167 status=0 QTime=1
+2019-04-09 03:30:21.418 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:TH&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617246} hits=0 status=0 QTime=0
+2019-04-09 03:30:23.314 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Fan&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617247} hits=25 status=0 QTime=2
+2019-04-09 03:30:26.189 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:an&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617248} hits=62 status=0 QTime=2
+2019-04-09 03:30:27.066 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:An&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617249} hits=62 status=0 QTime=0
+2019-04-09 03:30:27.930 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anti&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617250} hits=178 status=0 QTime=1
+2019-04-09 03:30:29.445 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:AntiV&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617251} hits=0 status=0 QTime=1
+2019-04-09 03:30:30.624 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anti&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617252} hits=178 status=0 QTime=0
+2019-04-09 03:30:31.397 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617253} hits=0 status=0 QTime=0
+2019-04-09 03:30:32.882 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:AntiV&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617254} hits=0 status=0 QTime=0
+2019-04-09 03:30:34.039 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:AntiVirus&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617255} hits=7 status=0 QTime=1
+2019-04-09 03:30:35.602 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='AntiVirus'&json.wrf=jQuery110209435037319108264_1554780617245&start=0&fq=category:*&sort=&wt=json&_=1554780617256} hits=10 status=0 QTime=48
+2019-04-09 03:30:48.101 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:THe+&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617257} hits=1254 status=0 QTime=1
+2019-04-09 03:30:50.709 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:The+Best+Anit&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617258} hits=5157 status=0 QTime=14
+2019-04-09 03:30:51.781 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:The+Best+Anti&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617259} hits=5252 status=0 QTime=6
+2019-04-09 03:30:52.248 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:The+Best+Antiv&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617260} hits=5157 status=0 QTime=6
+2019-04-09 03:30:52.930 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:The+Best+Antivirus&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617261} hits=5163 status=0 QTime=4
+2019-04-09 03:30:53.116 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='The+Best+Antivirus'&json.wrf=jQuery110209435037319108264_1554780617245&start=0&fq=category:*&sort=&wt=json&_=1554780617262} hits=10183 status=0 QTime=19
+2019-04-09 03:30:53.416 ERROR (qtp102617125-23) [   x:4034_IR] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'name:The Best Antivirus\': Lexical error at line 1, column 25.  Encountered: <EOF> after : ""
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:218)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'name:The Best Antivirus\': Lexical error at line 1, column 25.  Encountered: <EOF> after : ""
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:258)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	... 41 more
+Caused by: org.apache.solr.parser.TokenMgrError: Lexical error at line 1, column 25.  Encountered: <EOF> after : ""
+	at org.apache.solr.parser.QueryParserTokenManager.getNextToken(QueryParserTokenManager.java:1572)
+	at org.apache.solr.parser.QueryParser.getToken(QueryParser.java:808)
+	at org.apache.solr.parser.QueryParser.jj_3R_3(QueryParser.java:642)
+	at org.apache.solr.parser.QueryParser.jj_3_2(QueryParser.java:665)
+	at org.apache.solr.parser.QueryParser.jj_2_2(QueryParser.java:607)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:198)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	... 44 more
+
+2019-04-09 03:30:53.417 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:The+Best+Antivirus\&json.wrf=jQuery110209435037319108264_1554780617245&wt=json&_=1554780617263} status=400 QTime=5
+2019-04-09 03:30:57.715 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:The+Best+Antivirus&json.wrf=jQuery110209435037319108264_1554780617264&wt=json&_=1554780617265} hits=5163 status=0 QTime=1
+2019-04-09 03:30:58.466 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='The+Best+Antivirus'&json.wrf=jQuery110209435037319108264_1554780617264&start=0&fq=category:*&sort=&wt=json&_=1554780617266} hits=10183 status=0 QTime=1
+2019-04-09 03:31:03.336 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:THe+&json.wrf=jQuery110209435037319108264_1554780617264&wt=json&_=1554780617267} hits=1254 status=0 QTime=0
+2019-04-09 03:31:05.480 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110209435037319108264_1554780617264&start=0&fq=category:*&sort=&wt=json&_=1554780617268} hits=1419 status=0 QTime=14
+2019-04-09 03:31:05.604 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phone&json.wrf=jQuery110209435037319108264_1554780617264&wt=json&_=1554780617269} hits=360 status=0 QTime=4
+2019-04-09 03:31:13.792 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:The+best+phone&json.wrf=jQuery110209435037319108264_1554780617264&wt=json&_=1554780617270} hits=5807 status=0 QTime=6
+2019-04-09 03:31:13.816 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='The+best+phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617272} hits=10252 status=0 QTime=6
+2019-04-09 03:31:19.056 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617273} hits=1419 status=0 QTime=1
+2019-04-09 03:31:19.172 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:phone&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617274} hits=360 status=0 QTime=1
+2019-04-09 03:31:31.731 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=10&fq=category:*&sort=&wt=json&_=1554780617275} hits=1419 status=0 QTime=1
+2019-04-09 03:31:35.509 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617276} hits=1419 status=0 QTime=1
+2019-04-09 03:44:41.718 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phone&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617277} hits=360 status=0 QTime=1
+2019-04-09 03:44:47.877 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617278} hits=1419 status=0 QTime=1
+2019-04-09 03:45:10.965 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=price+asc&wt=json&_=1554780617279} hits=1419 status=0 QTime=20
+2019-04-09 03:45:15.247 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=price+desc&wt=json&_=1554780617280} hits=1419 status=0 QTime=2
+2019-04-09 03:45:19.990 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554780617281} hits=1419 status=0 QTime=4
+2019-04-09 03:47:52.320 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Pho&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617282} hits=0 status=0 QTime=0
+2019-04-09 03:47:52.726 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Pho'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617283} hits=0 status=0 QTime=0
+2019-04-09 03:47:55.238 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phon&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617284} hits=0 status=0 QTime=0
+2019-04-09 03:47:55.634 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phonn&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617285} hits=0 status=0 QTime=0
+2019-04-09 03:47:55.968 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phonne'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617286} hits=0 status=0 QTime=1
+2019-04-09 03:47:56.006 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phonne&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617287} hits=0 status=0 QTime=0
+2019-04-09 03:48:01.056 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:appapa&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617288} hits=0 status=0 QTime=0
+2019-04-09 03:48:01.994 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:app&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617289} hits=3 status=0 QTime=1
+2019-04-09 03:48:02.373 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:appl&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617290} hits=0 status=0 QTime=0
+2019-04-09 03:48:02.969 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:applee&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617291} hits=0 status=0 QTime=0
+2019-04-09 03:48:03.201 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='applee'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617292} hits=0 status=0 QTime=1
+2019-04-09 03:48:07.595 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:The+&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617293} hits=1254 status=0 QTime=0
+2019-04-09 03:48:08.089 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:The+brs&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617294} hits=1254 status=0 QTime=1
+2019-04-09 03:55:44.282 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anit&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617295} hits=0 status=0 QTime=0
+2019-04-09 03:55:44.940 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anitvi&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617296} hits=0 status=0 QTime=0
+2019-04-09 03:55:45.878 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anti&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617297} hits=178 status=0 QTime=0
+2019-04-09 03:55:46.821 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiviru&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617298} hits=0 status=0 QTime=0
+2019-04-09 03:55:47.401 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617299} hits=7 status=0 QTime=0
+2019-04-09 03:55:52.381 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617300} hits=10 status=0 QTime=0
+2019-04-09 03:56:20.543 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=price+asc&wt=json&_=1554780617301} hits=10 status=0 QTime=1
+2019-04-09 03:56:24.721 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=price+desc&wt=json&_=1554780617302} hits=10 status=0 QTime=1
+2019-04-09 03:56:28.253 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554780617303} hits=10 status=0 QTime=1
+2019-04-09 03:56:36.163 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:f&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617304} hits=8 status=0 QTime=0
+2019-04-09 03:56:36.863 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:fPh&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617305} hits=0 status=0 QTime=1
+2019-04-09 03:56:39.092 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:O&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617306} hits=17 status=0 QTime=2
+2019-04-09 03:56:40.473 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phone&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617307} hits=360 status=0 QTime=1
+2019-04-09 03:56:42.521 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617308} hits=1419 status=0 QTime=1
+2019-04-09 03:56:48.459 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=10&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554780617309} hits=1419 status=0 QTime=1
+2019-04-09 03:56:53.018 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554780617310} hits=1419 status=0 QTime=1
+2019-04-09 03:57:04.230 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Best+Phone&json.wrf=jQuery110209435037319108264_1554780617271&wt=json&_=1554780617311} hits=1578 status=0 QTime=5
+2019-04-09 03:57:05.458 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Best+Phone'&json.wrf=jQuery110209435037319108264_1554780617271&start=0&fq=category:*&sort=&wt=json&_=1554780617312} hits=5054 status=0 QTime=6
+2019-04-09 04:30:50.642 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anit&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073436} hits=0 status=0 QTime=1
+2019-04-09 04:30:51.457 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:An&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073437} hits=62 status=0 QTime=0
+2019-04-09 04:30:57.017 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:An&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073438} hits=62 status=0 QTime=0
+2019-04-09 04:30:57.879 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anti&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073439} hits=178 status=0 QTime=0
+2019-04-09 04:30:58.189 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073440} hits=0 status=0 QTime=0
+2019-04-09 04:30:58.803 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivir&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073441} hits=0 status=0 QTime=0
+2019-04-09 04:30:59.263 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073442} hits=7 status=0 QTime=0
+2019-04-09 04:31:06.685 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110208616660446140949_1554784073435&start=0&fq=category:*&sort=&wt=json&_=1554784073443} hits=10 status=0 QTime=0
+2019-04-09 04:31:31.771 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110208616660446140949_1554784073435&start=0&fq=category:*&sort=price+asc&wt=json&_=1554784073444} hits=10 status=0 QTime=0
+2019-04-09 04:31:34.868 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110208616660446140949_1554784073435&start=0&fq=category:*&sort=price+desc&wt=json&_=1554784073445} hits=10 status=0 QTime=1
+2019-04-09 04:31:38.964 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110208616660446140949_1554784073435&start=0&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554784073446} hits=10 status=0 QTime=0
+2019-04-09 04:31:46.160 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phone&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073447} hits=360 status=0 QTime=1
+2019-04-09 04:31:47.407 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110208616660446140949_1554784073435&start=0&fq=category:*&sort=&wt=json&_=1554784073448} hits=1419 status=0 QTime=0
+2019-04-09 04:31:58.132 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Best+Phone&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073449} hits=1578 status=0 QTime=1
+2019-04-09 04:32:00.208 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Best+Phone'&json.wrf=jQuery110208616660446140949_1554784073435&start=0&fq=category:*&sort=&wt=json&_=1554784073450} hits=5054 status=0 QTime=1
+2019-04-09 04:34:57.791 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:L&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073451} hits=167 status=0 QTime=0
+2019-04-09 04:34:58.137 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:LG&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073452} hits=212 status=0 QTime=0
+2019-04-09 04:35:02.377 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:B&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073453} hits=90 status=0 QTime=0
+2019-04-09 04:35:03.018 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Bay&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073454} hits=9 status=0 QTime=0
+2019-04-09 04:35:04.107 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:BayFront&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073455} hits=0 status=0 QTime=0
+2019-04-09 04:35:05.853 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:BayFr&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073456} hits=0 status=0 QTime=0
+2019-04-09 04:35:06.255 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:BayF&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073457} hits=0 status=0 QTime=0
+2019-04-09 04:35:07.019 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Bay&json.wrf=jQuery110208616660446140949_1554784073435&wt=json&_=1554784073458} hits=9 status=0 QTime=0
+2019-04-09 04:35:12.835 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='My+Kind+of+You+(A+Trillium+Bay+Novel+Book+1)'&json.wrf=jQuery110208616660446140949_1554784073435&start=0&fq=category:*&sort=&wt=json&_=1554784073459} hits=10350 status=0 QTime=14
+2019-04-09 04:44:57.448 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:A&json.wrf=jQuery110208015027111765368_1554784684720&wt=json&_=1554784684721} hits=599 status=0 QTime=0
+2019-04-09 04:44:57.903 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:An&json.wrf=jQuery110208015027111765368_1554784684720&wt=json&_=1554784684722} hits=62 status=0 QTime=0
+2019-04-09 04:44:58.682 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery110208015027111765368_1554784684720&wt=json&_=1554784684723} hits=0 status=0 QTime=0
+2019-04-09 04:44:59.212 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivri&json.wrf=jQuery110208015027111765368_1554784684720&wt=json&_=1554784684724} hits=0 status=0 QTime=0
+2019-04-09 04:45:00.272 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiviruys&json.wrf=jQuery110208015027111765368_1554784684720&wt=json&_=1554784684725} hits=0 status=0 QTime=0
+2019-04-09 04:45:01.451 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery110208015027111765368_1554784684720&wt=json&_=1554784684726} hits=7 status=0 QTime=0
+2019-04-09 04:45:11.041 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110208015027111765368_1554784684720&start=0&fq=category:*&sort=&wt=json&_=1554784684727} hits=10 status=0 QTime=0
+2019-04-09 04:45:48.751 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110208015027111765368_1554784684720&start=0&fq=category:*&sort=price+asc&wt=json&_=1554784684728} hits=10 status=0 QTime=0
+2019-04-09 04:45:51.990 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110208015027111765368_1554784684720&start=0&fq=category:*&sort=price+desc&wt=json&_=1554784684729} hits=10 status=0 QTime=0
+2019-04-09 04:45:54.317 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110208015027111765368_1554784684720&start=0&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554784684730} hits=10 status=0 QTime=0
+2019-04-09 04:46:02.885 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phone&json.wrf=jQuery110208015027111765368_1554784684720&wt=json&_=1554784684731} hits=360 status=0 QTime=1
+2019-04-09 04:46:04.973 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110208015027111765368_1554784684720&start=0&fq=category:*&sort=&wt=json&_=1554784684732} hits=1419 status=0 QTime=1
+2019-04-09 04:46:16.954 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Best+Phone&json.wrf=jQuery110208015027111765368_1554784684720&wt=json&_=1554784684733} hits=1578 status=0 QTime=0
+2019-04-09 04:46:18.303 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Best+Phone'&json.wrf=jQuery110208015027111765368_1554784684720&start=0&fq=category:*&sort=&wt=json&_=1554784684734} hits=5054 status=0 QTime=1
+2019-04-09 04:57:51.688 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:An&json.wrf=jQuery110200017017581949325677_1554785865894&wt=json&_=1554785865895} hits=62 status=0 QTime=0
+2019-04-09 04:57:52.472 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery110200017017581949325677_1554785865894&wt=json&_=1554785865896} hits=0 status=0 QTime=0
+2019-04-09 04:57:53.717 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery110200017017581949325677_1554785865894&wt=json&_=1554785865897} hits=7 status=0 QTime=0
+2019-04-09 04:58:04.388 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110200017017581949325677_1554785865894&start=0&fq=category:*&sort=&wt=json&_=1554785865898} hits=10 status=0 QTime=0
+2019-04-09 04:58:33.764 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110200017017581949325677_1554785865894&start=0&fq=category:*&sort=price+asc&wt=json&_=1554785865899} hits=10 status=0 QTime=0
+2019-04-09 04:58:38.679 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110200017017581949325677_1554785865894&start=0&fq=category:*&sort=price+desc&wt=json&_=1554785865900} hits=10 status=0 QTime=1
+2019-04-09 04:58:46.036 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110200017017581949325677_1554785865894&start=0&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554785865901} hits=10 status=0 QTime=1
+2019-04-09 04:59:00.048 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phone&json.wrf=jQuery110200017017581949325677_1554785865894&wt=json&_=1554785865902} hits=360 status=0 QTime=1
+2019-04-09 04:59:01.674 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110200017017581949325677_1554785865894&start=0&fq=category:'Unlocked+Cell+Phones'&sort=&wt=json&_=1554785865903} hits=1279 status=0 QTime=5
+2019-04-09 04:59:11.095 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Best+Phone&json.wrf=jQuery110200017017581949325677_1554785865894&wt=json&_=1554785865904} hits=1578 status=0 QTime=1
+2019-04-09 04:59:12.861 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Best+Phone'&json.wrf=jQuery110200017017581949325677_1554785865894&start=0&fq=category:'Unlocked+Cell+Phones'&sort=&wt=json&_=1554785865905} hits=1303 status=0 QTime=3
+2019-04-09 05:02:30.082 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Flower&json.wrf=jQuery110208962391500448377_1554786110030&wt=json&_=1554786110031} hits=9 status=0 QTime=0
+2019-04-09 05:02:38.500 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=''&json.wrf=jQuery110208962391500448377_1554786110030&start=0&fq=category:*&sort=&wt=json&_=1554786110032} hits=0 status=0 QTime=2
+2019-04-09 05:05:16.010 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:F&json.wrf=jQuery110202755093603923706_1554786160645&wt=json&_=1554786160646} hits=8 status=0 QTime=0
+2019-04-09 05:05:18.798 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Harry&json.wrf=jQuery110202755093603923706_1554786160645&wt=json&_=1554786160647} hits=11 status=0 QTime=0
+2019-04-09 05:05:24.489 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Harry+Potter+Hogwarts+Battle+Cooperative+Deck+Building+Card+Game+|+Official+Harry+Potter+Licensed+Merchandise+|+Harry+Potter+Board+Game+|+Great+Gift+for+Harry+Potter+Fans+|+Harry+Potter+Movie+artwork'&json.wrf=jQuery110202755093603923706_1554786160645&start=0&fq=category:*&sort=&wt=json&_=1554786160648} hits=9007 status=0 QTime=11
+2019-04-09 05:05:44.197 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Harry+Po&json.wrf=jQuery110202755093603923706_1554786160645&wt=json&_=1554786160649} hits=12 status=0 QTime=1
+2019-04-09 05:05:45.005 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Harry+Potter&json.wrf=jQuery110202755093603923706_1554786160645&wt=json&_=1554786160650} hits=16 status=0 QTime=1
+2019-04-09 05:05:49.466 ERROR (qtp102617125-15) [   x:4034_IR] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Potter
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1305)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:442)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-09 05:05:49.467 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='LEGO+Harry+Potter:+Collection+-+Xbox+One'&json.wrf=jQuery110202755093603923706_1554786160645&start=0&fq=category:*&sort=&wt=json&_=1554786160651} status=400 QTime=1
+2019-04-09 05:05:54.513 ERROR (qtp102617125-23) [   x:4034_IR] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Potter
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1305)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:442)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-09 05:05:54.513 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='LEGO+Harry+Potter:+Collection+-+Xbox+One'&json.wrf=jQuery110202755093603923706_1554786160652&start=10&fq=category:*&sort=&wt=json&_=1554786160653} status=400 QTime=1
+2019-04-09 05:05:55.210 ERROR (qtp102617125-15) [   x:4034_IR] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Potter
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1305)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:442)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-09 05:05:55.210 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='LEGO+Harry+Potter:+Collection+-+Xbox+One'&json.wrf=jQuery110202755093603923706_1554786160654&start=20&fq=category:*&sort=&wt=json&_=1554786160655} status=400 QTime=1
+2019-04-09 05:05:55.799 ERROR (qtp102617125-23) [   x:4034_IR] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field Potter
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1305)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:442)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:191)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:239)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:518)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1077)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:800)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:222)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:254)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:173)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:160)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:272)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:199)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2551)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:710)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:516)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-04-09 05:05:55.799 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='LEGO+Harry+Potter:+Collection+-+Xbox+One'&json.wrf=jQuery110202755093603923706_1554786160656&start=30&fq=category:*&sort=&wt=json&_=1554786160657} status=400 QTime=1
+2019-04-09 05:05:59.323 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:H&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160659} hits=74 status=0 QTime=0
+2019-04-09 05:05:59.669 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Ha&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160660} hits=2 status=0 QTime=1
+2019-04-09 05:06:01.793 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Hyaluronic+Acid+Serum+1+oz+-+100%25+Pure+Organic+HA+-+Anti+Aging+Anti+Wrinkle+-+Original+Face+Moisturizer+for+Dry+Skin+%26+Fine+Lines+-+Leaves+Skin+Full+%26+Plump+ASTERWOOD+NATURALS+Dropper+Bottle'&json.wrf=jQuery110202755093603923706_1554786160658&start=0&fq=category:*&sort=&wt=json&_=1554786160661} hits=8212 status=0 QTime=9
+2019-04-09 05:06:06.768 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:H&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160662} hits=74 status=0 QTime=0
+2019-04-09 05:06:15.272 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:F&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160663} hits=8 status=0 QTime=0
+2019-04-09 05:06:17.289 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Flower&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160664} hits=9 status=0 QTime=0
+2019-04-09 05:06:21.132 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Flower'&json.wrf=jQuery110202755093603923706_1554786160658&start=0&fq=category:'Kindle'&sort=&wt=json&_=1554786160665} hits=1 status=0 QTime=1
+2019-04-09 05:06:21.205 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Flower&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160666} hits=9 status=0 QTime=0
+2019-04-09 05:06:32.972 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:198&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160667} hits=3 status=0 QTime=1
+2019-04-09 05:06:33.325 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:1983&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160668} hits=0 status=0 QTime=0
+2019-04-09 05:06:34.011 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:1984&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160669} hits=2 status=0 QTime=0
+2019-04-09 05:06:37.284 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='1984'&json.wrf=jQuery110202755093603923706_1554786160658&start=0&fq=category:'Kindle'&sort=&wt=json&_=1554786160670} hits=2 status=0 QTime=0
+2019-04-09 05:06:46.858 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:198&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160671} hits=3 status=0 QTime=0
+2019-04-09 05:06:47.277 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:1984&json.wrf=jQuery110202755093603923706_1554786160658&wt=json&_=1554786160672} hits=2 status=0 QTime=0
+2019-04-09 05:06:48.032 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='1984'&json.wrf=jQuery110202755093603923706_1554786160658&start=0&fq=category:*&sort=&wt=json&_=1554786160673} hits=3 status=0 QTime=0
+2019-04-09 05:12:50.993 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:A&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424401} hits=599 status=0 QTime=0
+2019-04-09 05:12:51.966 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anti&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424402} hits=178 status=0 QTime=0
+2019-04-09 05:12:52.596 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424403} hits=0 status=0 QTime=0
+2019-04-09 05:12:53.111 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivir&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424404} hits=0 status=0 QTime=0
+2019-04-09 05:12:53.892 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424405} hits=7 status=0 QTime=0
+2019-04-09 05:13:03.988 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery1102004209148022122311_1554786424400&start=0&fq=category:*&sort=&wt=json&_=1554786424406} hits=10 status=0 QTime=0
+2019-04-09 05:13:34.960 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery1102004209148022122311_1554786424400&start=0&fq=category:*&sort=price+asc&wt=json&_=1554786424407} hits=10 status=0 QTime=0
+2019-04-09 05:13:38.442 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery1102004209148022122311_1554786424400&start=0&fq=category:*&sort=price+desc&wt=json&_=1554786424408} hits=10 status=0 QTime=0
+2019-04-09 05:13:45.768 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery1102004209148022122311_1554786424400&start=0&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554786424409} hits=10 status=0 QTime=0
+2019-04-09 05:13:58.113 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phone&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424410} hits=360 status=0 QTime=1
+2019-04-09 05:13:59.582 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery1102004209148022122311_1554786424400&start=0&fq=category:'Unlocked+Cell+Phones'&sort=&wt=json&_=1554786424411} hits=1279 status=0 QTime=1
+2019-04-09 05:14:12.044 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Best+Phone&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424412} hits=1578 status=0 QTime=1
+2019-04-09 05:14:13.441 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Best+Phone'&json.wrf=jQuery1102004209148022122311_1554786424400&start=0&fq=category:'Unlocked+Cell+Phones'&sort=&wt=json&_=1554786424413} hits=1303 status=0 QTime=1
+2019-04-09 05:14:35.591 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:1&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424414} hits=782 status=0 QTime=0
+2019-04-09 05:14:35.952 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:19&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424415} hits=21 status=0 QTime=0
+2019-04-09 05:14:36.361 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:198&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424416} hits=3 status=0 QTime=0
+2019-04-09 05:14:36.796 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:1984&json.wrf=jQuery1102004209148022122311_1554786424400&wt=json&_=1554786424417} hits=2 status=0 QTime=0
+2019-04-09 05:14:41.516 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='1984'&json.wrf=jQuery1102004209148022122311_1554786424400&start=0&fq=category:*&sort=&wt=json&_=1554786424418} hits=3 status=0 QTime=0
+2019-04-09 05:22:31.658 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Ant&json.wrf=jQuery1102036730934463732345_1554787182344&wt=json&_=1554787182345} hits=4 status=0 QTime=0
+2019-04-09 05:22:32.421 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery1102036730934463732345_1554787182344&wt=json&_=1554787182346} hits=0 status=0 QTime=0
+2019-04-09 05:22:34.000 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery1102036730934463732345_1554787182344&wt=json&_=1554787182347} hits=7 status=0 QTime=0
+2019-04-09 05:22:46.283 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery1102036730934463732345_1554787182344&start=0&fq=category:*&sort=&wt=json&_=1554787182348} hits=10 status=0 QTime=0
+2019-04-09 05:37:02.497 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:A&json.wrf=jQuery1102015165913615445215_1554788087747&wt=json&_=1554788087748} hits=599 status=0 QTime=1
+2019-04-09 05:37:03.549 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anti&json.wrf=jQuery1102015165913615445215_1554788087747&wt=json&_=1554788087749} hits=178 status=0 QTime=0
+2019-04-09 05:37:03.927 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery1102015165913615445215_1554788087747&wt=json&_=1554788087750} hits=0 status=0 QTime=0
+2019-04-09 05:37:04.637 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivi&json.wrf=jQuery1102015165913615445215_1554788087747&wt=json&_=1554788087751} hits=0 status=0 QTime=0
+2019-04-09 05:37:05.397 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery1102015165913615445215_1554788087747&wt=json&_=1554788087752} hits=7 status=0 QTime=0
+2019-04-09 05:37:17.712 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery1102015165913615445215_1554788087747&start=0&fq=category:*&sort=&wt=json&_=1554788087753} hits=10 status=0 QTime=0
+2019-04-09 05:42:39.713 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:A&json.wrf=jQuery110206760151677582618_1554788351260&wt=json&_=1554788351261} hits=599 status=0 QTime=0
+2019-04-09 05:42:40.602 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antio&json.wrf=jQuery110206760151677582618_1554788351260&wt=json&_=1554788351262} hits=0 status=0 QTime=0
+2019-04-09 05:42:41.296 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery110206760151677582618_1554788351260&wt=json&_=1554788351263} hits=0 status=0 QTime=0
+2019-04-09 05:42:41.982 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery110206760151677582618_1554788351260&wt=json&_=1554788351264} hits=7 status=0 QTime=0
+2019-04-09 05:42:52.098 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110206760151677582618_1554788351260&start=0&fq=category:*&sort=&wt=json&_=1554788351265} hits=10 status=0 QTime=0
+2019-04-09 05:46:28.668 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:A&json.wrf=jQuery110208843374926185124_1554788609771&wt=json&_=1554788609772} hits=599 status=0 QTime=0
+2019-04-09 05:46:29.622 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anti&json.wrf=jQuery110208843374926185124_1554788609771&wt=json&_=1554788609773} hits=178 status=0 QTime=0
+2019-04-09 05:46:29.951 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery110208843374926185124_1554788609771&wt=json&_=1554788609774} hits=0 status=0 QTime=0
+2019-04-09 05:46:30.688 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivi&json.wrf=jQuery110208843374926185124_1554788609771&wt=json&_=1554788609775} hits=0 status=0 QTime=0
+2019-04-09 05:46:31.445 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery110208843374926185124_1554788609771&wt=json&_=1554788609776} hits=7 status=0 QTime=0
+2019-04-09 05:46:43.063 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110208843374926185124_1554788609771&start=0&fq=category:*&sort=&wt=json&_=1554788609777} hits=10 status=0 QTime=0
+2019-04-09 05:51:45.073 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:An&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883469} hits=62 status=0 QTime=0
+2019-04-09 05:51:45.432 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Ant&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883470} hits=4 status=0 QTime=0
+2019-04-09 05:51:46.829 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Anti&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883471} hits=178 status=0 QTime=0
+2019-04-09 05:51:47.283 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antiv&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883472} hits=0 status=0 QTime=0
+2019-04-09 05:51:48.936 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883473} hits=7 status=0 QTime=0
+2019-04-09 05:51:59.694 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110201754628430824242_1554788883468&start=0&fq=category:*&sort=&wt=json&_=1554788883474} hits=10 status=0 QTime=0
+2019-04-09 05:52:29.171 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110201754628430824242_1554788883468&start=0&fq=category:*&sort=price+asc&wt=json&_=1554788883475} hits=10 status=0 QTime=0
+2019-04-09 05:52:32.658 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110201754628430824242_1554788883468&start=0&fq=category:*&sort=price+desc&wt=json&_=1554788883476} hits=10 status=0 QTime=0
+2019-04-09 05:52:36.514 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110201754628430824242_1554788883468&start=0&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554788883477} hits=10 status=0 QTime=1
+2019-04-09 05:52:51.040 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:P&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883478} hits=14 status=0 QTime=36
+2019-04-09 05:52:51.725 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phone&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883479} hits=360 status=0 QTime=1
+2019-04-09 05:52:54.163 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110201754628430824242_1554788883468&start=0&fq=category:'Unlocked+Cell+Phones'&sort=&wt=json&_=1554788883480} hits=1279 status=0 QTime=2
+2019-04-09 05:53:06.809 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Best+Phone&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883481} hits=1578 status=0 QTime=1
+2019-04-09 05:53:08.382 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Best+Phone'&json.wrf=jQuery110201754628430824242_1554788883468&start=0&fq=category:'Unlocked+Cell+Phones'&sort=&wt=json&_=1554788883482} hits=1303 status=0 QTime=1
+2019-04-09 05:53:32.325 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:1&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883483} hits=782 status=0 QTime=0
+2019-04-09 05:53:33.246 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:19&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883484} hits=21 status=0 QTime=0
+2019-04-09 05:53:34.121 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:198&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883485} hits=3 status=0 QTime=0
+2019-04-09 05:53:35.699 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:1984&json.wrf=jQuery110201754628430824242_1554788883468&wt=json&_=1554788883486} hits=2 status=0 QTime=0
+2019-04-09 05:53:45.169 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='1984'&json.wrf=jQuery110201754628430824242_1554788883468&start=0&fq=category:*&sort=&wt=json&_=1554788883487} hits=3 status=0 QTime=0
+2019-04-09 06:03:26.824 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:A&json.wrf=jQuery110200034708696117328186_1554789438881&wt=json&_=1554789438882} hits=599 status=0 QTime=0
+2019-04-09 06:03:27.218 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:An&json.wrf=jQuery110200034708696117328186_1554789438881&wt=json&_=1554789438883} hits=62 status=0 QTime=0
+2019-04-09 06:03:27.746 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Ant&json.wrf=jQuery110200034708696117328186_1554789438881&wt=json&_=1554789438884} hits=4 status=0 QTime=0
+2019-04-09 06:03:28.502 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivi&json.wrf=jQuery110200034708696117328186_1554789438881&wt=json&_=1554789438885} hits=0 status=0 QTime=0
+2019-04-09 06:03:29.353 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Antivirus&json.wrf=jQuery110200034708696117328186_1554789438881&wt=json&_=1554789438886} hits=7 status=0 QTime=0
+2019-04-09 06:03:40.704 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110200034708696117328186_1554789438881&start=0&fq=category:*&sort=&wt=json&_=1554789438887} hits=10 status=0 QTime=0
+2019-04-09 06:04:12.469 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110200034708696117328186_1554789438881&start=0&fq=category:*&sort=price+asc&wt=json&_=1554789438888} hits=10 status=0 QTime=0
+2019-04-09 06:04:16.182 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110200034708696117328186_1554789438881&start=0&fq=category:*&sort=price+desc&wt=json&_=1554789438889} hits=10 status=0 QTime=0
+2019-04-09 06:04:21.303 INFO  (qtp102617125-23) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Antivirus'&json.wrf=jQuery110200034708696117328186_1554789438881&start=0&fq=category:*&sort=ratings.5_star+desc&wt=json&_=1554789438890} hits=10 status=0 QTime=0
+2019-04-09 06:04:35.017 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Phone&json.wrf=jQuery110200034708696117328186_1554789438881&wt=json&_=1554789438891} hits=360 status=0 QTime=0
+2019-04-09 06:04:36.597 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Phone'&json.wrf=jQuery110200034708696117328186_1554789438881&start=0&fq=category:'Unlocked+Cell+Phones'&sort=&wt=json&_=1554789438892} hits=1279 status=0 QTime=0
+2019-04-09 06:04:50.906 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:Best+Phone&json.wrf=jQuery110200034708696117328186_1554789438881&wt=json&_=1554789438893} hits=1578 status=0 QTime=1
+2019-04-09 06:04:54.249 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='Best+Phone'&json.wrf=jQuery110200034708696117328186_1554789438881&start=0&fq=category:'Unlocked+Cell+Phones'&sort=&wt=json&_=1554789438894} hits=1303 status=0 QTime=1
+2019-04-09 06:05:16.572 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:198&json.wrf=jQuery110200034708696117328186_1554789438881&wt=json&_=1554789438895} hits=3 status=0 QTime=0
+2019-04-09 06:05:16.999 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=name:1984&json.wrf=jQuery110200034708696117328186_1554789438881&wt=json&_=1554789438896} hits=2 status=0 QTime=0
+2019-04-09 06:05:19.822 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q='1984'&json.wrf=jQuery110200034708696117328186_1554789438881&start=0&fq=category:*&sort=&wt=json&_=1554789438897} hits=3 status=0 QTime=0
+2019-04-09 07:56:20.968 INFO  (qtp102617125-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554796580872} status=0 QTime=1
+2019-04-09 07:56:21.003 INFO  (qtp102617125-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554796580873} status=0 QTime=37
+2019-04-09 07:56:23.553 INFO  (qtp102617125-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554796580872} status=0 QTime=0
+2019-04-09 07:56:23.559 INFO  (qtp102617125-19) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554796580873&ts=1554796580873} status=503 QTime=3
+2019-04-09 07:56:23.562 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554796583545} status=0 QTime=8
+2019-04-09 07:56:23.568 INFO  (qtp102617125-41) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/replication params={wt=json&command=details&_=1554796583545} status=0 QTime=12
+2019-04-09 07:56:23.587 INFO  (qtp102617125-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554796580873} status=0 QTime=33
+2019-04-09 07:56:23.597 INFO  (qtp102617125-15) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/admin/system params={wt=json&_=1554796583545} status=0 QTime=43
+2019-04-09 07:56:24.062 INFO  (qtp102617125-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554796580872} status=0 QTime=0
+2019-04-09 07:56:24.063 INFO  (qtp102617125-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1554796580872} status=0 QTime=0
+2019-04-09 07:56:24.082 INFO  (qtp102617125-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554796580873} status=0 QTime=19
+2019-04-09 07:56:24.095 INFO  (qtp102617125-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554796580872} status=0 QTime=0
+2019-04-09 07:56:24.096 INFO  (qtp102617125-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1554796580872} status=0 QTime=1
+2019-04-09 07:56:25.330 INFO  (qtp102617125-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554796580872} status=0 QTime=0
+2019-04-09 07:56:25.331 INFO  (qtp102617125-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1554796585325&since=0} status=0 QTime=1
+2019-04-09 07:56:25.348 INFO  (qtp102617125-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554796580873} status=0 QTime=18
+2019-04-09 07:56:26.513 INFO  (qtp102617125-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554796580872} status=0 QTime=0
+2019-04-09 07:56:26.535 INFO  (qtp102617125-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554796580873} status=0 QTime=21
+2019-04-09 07:56:27.494 INFO  (qtp102617125-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554796580872} status=0 QTime=0
+2019-04-09 07:56:27.494 INFO  (qtp102617125-39) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554796583545} status=0 QTime=0
+2019-04-09 07:56:27.495 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554796580873&ts=1554796580873} status=503 QTime=0
+2019-04-09 07:56:27.496 INFO  (qtp102617125-22) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/replication params={wt=json&command=details&_=1554796583545} status=0 QTime=1
+2019-04-09 07:56:27.517 INFO  (qtp102617125-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554796580873} status=0 QTime=23
+2019-04-09 07:56:27.521 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/admin/system params={wt=json&_=1554796583545} status=0 QTime=27
+2019-04-09 07:56:29.416 INFO  (qtp102617125-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554796580872} status=0 QTime=0
+2019-04-09 07:56:29.432 INFO  (qtp102617125-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554796580873} status=0 QTime=16
+2019-04-09 07:56:36.016 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=phone&_=1554796589380} hits=1419 status=0 QTime=2
+2019-04-09 07:56:48.230 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=phone&fl=name&_=1554796589380} hits=1419 status=0 QTime=1
+2019-04-09 07:57:57.681 INFO  (qtp102617125-41) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=Antivirus&fl=name,price,url,ratings.5_star,category&_=1554796589380} hits=10 status=0 QTime=0
+2019-04-09 07:58:07.501 INFO  (qtp102617125-39) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=Antivirus&fl=name,price,url,ratings.5_star,category&_=1554796589380} hits=10 status=0 QTime=0
+2019-04-09 07:58:41.148 INFO  (qtp102617125-41) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=1984&fl=name,price,url,ratings.5_star,category&_=1554796589380} hits=3 status=0 QTime=0
+2019-04-09 07:59:05.226 INFO  (qtp102617125-42) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=Best+Phone&fl=name,price,url,ratings.5_star,category&_=1554796589380} hits=5054 status=0 QTime=3
+2019-04-09 07:59:53.178 INFO  (qtp102617125-41) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=movie&fl=name,price,url,ratings.5_star,category&_=1554796589380} hits=931 status=0 QTime=10
+2019-04-09 08:00:03.759 INFO  (qtp102617125-16) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=Die+Hard&fl=name,price,url,ratings.5_star,category&_=1554796589380} hits=536 status=0 QTime=6
+2019-04-09 08:00:15.039 INFO  (qtp102617125-41) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=Pokemon+Game&fl=name,price,url,ratings.5_star,category&_=1554796589380} hits=872 status=0 QTime=6

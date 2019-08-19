@@ -1,0 +1,73 @@
+2019-04-09 15:31:48.642 INFO  (main) [   ] o.e.j.u.log Logging initialized @787ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-04-09 15:31:48.758 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-04-09 15:31:48.767 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_131-b11
+2019-04-09 15:31:48.790 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/arkarmin/Desktop/Search_Server/server/contexts/] at interval 0
+2019-04-09 15:31:48.986 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-04-09 15:31:48.995 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-04-09 15:31:48.996 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-04-09 15:31:48.997 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-04-09 15:31:49.042 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-04-09 15:31:49.065 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-04-09 15:31:49.069 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.0
+2019-04-09 15:31:49.070 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-04-09 15:31:49.070 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/arkarmin/Desktop/Search_Server
+2019-04-09 15:31:49.070 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-04-09T15:31:49.070Z
+2019-04-09 15:31:49.087 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/arkarmin/Desktop/Search_Server/server/solr
+2019-04-09 15:31:49.092 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/arkarmin/Desktop/Search_Server/server/solr/solr.xml
+2019-04-09 15:31:49.136 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99, but no JMX reporters were configured - adding default JMX reporter.
+2019-04-09 15:31:49.466 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-04-09 15:31:49.811 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-04-09 15:31:49.813 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-04-09 15:31:49.867 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99
+2019-04-09 15:31:49.867 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99
+2019-04-09 15:31:49.872 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99
+2019-04-09 15:31:49.900 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/arkarmin/Desktop/Search_Server/server/solr
+2019-04-09 15:31:49.900 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [4034_IR]
+2019-04-09 15:31:49.938 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.c.SolrResourceLoader [4034_IR] Added 58 libs to classloader, from paths: [/Users/arkarmin/Desktop/Search_Server/contrib/clustering/lib, /Users/arkarmin/Desktop/Search_Server/contrib/extraction/lib, /Users/arkarmin/Desktop/Search_Server/contrib/langid/lib, /Users/arkarmin/Desktop/Search_Server/contrib/velocity/lib, /Users/arkarmin/Desktop/Search_Server/dist]
+2019-04-09 15:31:49.948 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@63070bab{/solr,file:///Users/arkarmin/Desktop/Search_Server/server/solr-webapp/webapp/,AVAILABLE}{/Users/arkarmin/Desktop/Search_Server/server/solr-webapp/webapp}
+2019-04-09 15:31:49.966 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@50fe837a{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-04-09 15:31:49.966 INFO  (main) [   ] o.e.j.s.Server Started @2112ms
+2019-04-09 15:31:50.074 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.0
+2019-04-09 15:31:50.187 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.s.IndexSchema [4034_IR] Schema name=default-config
+2019-04-09 15:31:50.452 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-04-09 15:31:50.568 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.c.CoreContainer Creating SolrCore '4034_IR' using configuration from instancedir /Users/arkarmin/Desktop/Search_Server/server/solr/4034_IR, trusted=true
+2019-04-09 15:31:50.592 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.4034_IR' (registry 'solr.core.4034_IR') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@58fdd99
+2019-04-09 15:31:50.606 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.c.SolrCore [[4034_IR] ] Opening new SolrCore at [/Users/arkarmin/Desktop/Search_Server/server/solr/4034_IR], dataDir=[/Users/arkarmin/Desktop/Search_Server/server/solr/4034_IR/data/]
+2019-04-09 15:31:50.639 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-04-09 15:31:50.973 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-04-09 15:31:50.973 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-04-09 15:31:50.993 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-04-09 15:31:50.993 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-04-09 15:31:51.082 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.s.SolrIndexSearcher Opening [Searcher@6045b158[4034_IR] main]
+2019-04-09 15:31:51.091 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/arkarmin/Desktop/Search_Server/server/solr/4034_IR/conf
+2019-04-09 15:31:51.105 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-04-09 15:31:51.110 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-04-09 15:31:51.120 INFO  (coreLoadExecutor-9-thread-1) [   x:4034_IR] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-04-09 15:31:51.136 INFO  (searcherExecutor-10-thread-1-processing-x:4034_IR) [   x:4034_IR] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6045b158[4034_IR] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(7.7.0):C10802:[diagnostics={java.runtime.version=1.8.0_131-b11, java.vendor=Oracle Corporation, java.version=1.8.0_131, java.vm.version=25.131-b11, lucene.version=7.7.0, os=Mac OS X, os.arch=x86_64, os.version=10.14.3, source=flush, timestamp=1553184821301}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-09 15:31:51.137 INFO  (searcherExecutor-10-thread-1-processing-x:4034_IR) [   x:4034_IR] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-04-09 15:31:51.137 INFO  (searcherExecutor-10-thread-1-processing-x:4034_IR) [   x:4034_IR] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-04-09 15:31:51.141 INFO  (searcherExecutor-10-thread-1-processing-x:4034_IR) [   x:4034_IR] o.a.s.c.SolrCore [4034_IR] Registered new searcher Searcher@6045b158[4034_IR] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_5(7.7.0):C10802:[diagnostics={java.runtime.version=1.8.0_131-b11, java.vendor=Oracle Corporation, java.version=1.8.0_131, java.vm.version=25.131-b11, lucene.version=7.7.0, os=Mac OS X, os.arch=x86_64, os.version=10.14.3, source=flush, timestamp=1553184821301}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-04-09 15:31:54.532 INFO  (qtp102617125-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554823914446} status=0 QTime=4
+2019-04-09 15:31:54.557 INFO  (qtp102617125-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554823914447} status=0 QTime=27
+2019-04-09 15:31:57.328 INFO  (qtp102617125-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554823914446} status=0 QTime=0
+2019-04-09 15:31:57.346 INFO  (qtp102617125-20) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1554823914447&ts=1554823914447} status=503 QTime=4
+2019-04-09 15:31:57.347 INFO  (qtp102617125-17) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1554823917319} status=0 QTime=6
+2019-04-09 15:31:57.351 INFO  (qtp102617125-14) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/replication params={wt=json&command=details&_=1554823917319} status=0 QTime=12
+2019-04-09 15:31:57.376 INFO  (qtp102617125-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554823914447} status=0 QTime=49
+2019-04-09 15:31:57.379 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/admin/system params={wt=json&_=1554823917319} status=0 QTime=39
+2019-04-09 15:31:59.477 INFO  (qtp102617125-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1554823914446} status=0 QTime=0
+2019-04-09 15:31:59.494 INFO  (qtp102617125-39) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1554823914447} status=0 QTime=16
+2019-04-09 15:32:01.360 INFO  (qtp102617125-21) [   x:4034_IR] o.a.s.c.S.Request [4034_IR]  webapp=/solr path=/select params={q=*:*&_=1554823919420} hits=10802 status=0 QTime=30
+2019-04-09 15:42:46.209 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@50fe837a{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-04-09 15:42:46.210 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-04-09 15:42:46.212 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1324829744
+2019-04-09 15:42:46.214 INFO  (coreCloseExecutor-15-thread-1) [   x:4034_IR] o.a.s.c.SolrCore [4034_IR]  CLOSING SolrCore org.apache.solr.core.SolrCore@5e0f9817
+2019-04-09 15:42:46.214 INFO  (coreCloseExecutor-15-thread-1) [   x:4034_IR] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.4034_IR, tag=5e0f9817
+2019-04-09 15:42:46.215 INFO  (coreCloseExecutor-15-thread-1) [   x:4034_IR] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@44288ff4: rootName = null, domain = solr.core.4034_IR, service url = null, agent id = null] for registry solr.core.4034_IR / com.codahale.metrics.MetricRegistry@7cc89b3c
+2019-04-09 15:42:46.234 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-04-09 15:42:46.234 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@47a5b70d: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@5d353c63
+2019-04-09 15:42:46.236 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-04-09 15:42:46.236 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@43aaf813: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@52a6ed1b
+2019-04-09 15:42:46.238 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-04-09 15:42:46.238 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@57ac5227: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@556df1e0
+2019-04-09 15:42:46.245 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@63070bab{/solr,null,UNAVAILABLE}{/Users/arkarmin/Desktop/Search_Server/server/solr-webapp/webapp}
